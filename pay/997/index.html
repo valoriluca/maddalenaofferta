@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pagamento riservato — Maddalena Coach</title>
+<style>
+  :root{
+    --ground:#08080B; --surface:#15151C; --surface-2:#1C1C25;
+    --line:#2A2A36; --rose:#E11D57; --rose-lt:#F2568B;
+    --ink:#F6F2F5; --muted:#9E96A2; --good:#39D98A;
+  }
+  *{margin:0; padding:0; box-sizing:border-box}
+  body{background:var(--ground); color:var(--ink); font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif; min-height:100vh; display:flex; flex-direction:column; align-items:center}
+  .wrap{width:100%; max-width:560px; padding:36px 20px 60px}
+  .brand{text-align:center; margin-bottom:28px}
+  .brand .nome{font-family:Georgia,serif; font-style:italic; font-size:30px; color:var(--rose-lt)}
+  .brand .coach{font-size:12px; letter-spacing:3px; color:var(--muted); text-transform:uppercase; margin-top:2px}
+  .divider{height:1px; background:linear-gradient(90deg,transparent,var(--line),transparent); margin:18px 0 26px}
+  h1{font-size:21px; font-weight:700; text-align:center}
+  .amount{font-size:52px; font-weight:800; letter-spacing:-.02em; text-align:center; margin:14px 0 4px}
+  .sub{color:var(--muted); font-size:14px; text-align:center; margin-bottom:26px}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:14px; min-height:540px}
+  .secure{display:flex; gap:8px; justify-content:center; align-items:center; color:var(--muted); font-size:12.5px; margin-top:16px}
+  .secure .dot{color:var(--good)}
+  footer{margin-top:auto; padding:18px; color:#565060; font-size:11.5px; text-align:center}
+</style>
+<script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="nome">Maddalena</div>
+      <div class="coach">Coach</div>
+    </div>
+    <h1>Pagamento riservato</h1>
+    <div class="amount">€997</div>
+    <p class="sub">Importo concordato con la tua referente. Completa qui sotto in modo sicuro.</p>
+    <div class="card">
+      <div data-whop-checkout-plan-id="plan_aVIFdgLUSTjIg" data-whop-checkout-theme="dark" style="min-height:520px"></div>
+    </div>
+    <p class="secure"><span class="dot">●</span> Pagamento sicuro e criptato — carta, PayPal, Apple&nbsp;Pay</p>
+    <div class="divider"></div>
+  </div>
+  <footer>© 2026 Maddalena Coach — Tutti i diritti riservati</footer>
+</body>
+</html>
