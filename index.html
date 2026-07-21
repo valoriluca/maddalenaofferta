@@ -162,22 +162,22 @@
 
     <div class="offer">
       <div class="price-row">
-        <span class="price-now">€397</span>
+        <span class="price-now">€497</span>
         <span class="price-old">€1.000</span>
-        <span class="save">−60%</span>
+        <span class="save">−50%</span>
       </div>
       <p class="price-sub">Prezzo riservato a chi entra adesso.</p>
 
-      <div class="countdown" id="cd" aria-label="Tempo rimasto al prezzo di 397 euro">
+      <div class="countdown" id="cd" aria-label="Prezzo definitivo">
         <div class="cd-cell"><div class="cd-num" id="cd-d">00</div><div class="cd-lab">giorni</div></div>
         <div class="cd-cell"><div class="cd-num" id="cd-h">00</div><div class="cd-lab">ore</div></div>
         <div class="cd-cell"><div class="cd-num" id="cd-m">00</div><div class="cd-lab">min</div></div>
         <div class="cd-cell"><div class="cd-num" id="cd-s">00</div><div class="cd-lab">sec</div></div>
       </div>
-      <p class="cd-note" id="cd-note">Poi il prezzo sale a €497. Definitivo, per sempre.</p>
+      <p class="cd-note" id="cd-note">497. Come promesso. Questo è il prezzo, per sempre.</p>
 
       <div id="checkout" class="whop-box">
-        <div data-whop-checkout-plan-id="plan_IGmAPadyE9aHA" data-whop-checkout-theme="dark" style="min-height:520px"></div>
+        <div data-whop-checkout-plan-id="plan_TedEh0TTJPDPx" data-whop-checkout-theme="dark" style="min-height:520px"></div>
       </div>
       <p class="cta-sub">Pagamento sicuro · carta, Google Pay, PayPal · accesso a vita · garanzia 5 giorni</p>
     </div>
@@ -193,13 +193,13 @@
         <span class="step-when">Chiuso</span>
         <span class="step-price" style="text-decoration:line-through">€297</span>
       </div>
+      <div class="step dim">
+        <span class="step-when">Chiuso</span>
+        <span class="step-price" style="text-decoration:line-through">€397</span>
+      </div>
       <div class="step live">
         <span class="step-when">Ora</span>
-        <span class="step-tag">tu sei qui</span>
-        <span class="step-price">€397</span>
-      </div>
-      <div class="step dim">
-        <span class="step-when">Da mercoledì</span>
+        <span class="step-tag">prezzo definitivo</span>
         <span class="step-price">€497</span>
       </div>
     </div>
@@ -275,8 +275,8 @@
 <section class="final">
   <div class="wrap">
     <h2>Il tuo cervello AI, stanotte.</h2>
-    <p class="lead">€397 finché scorre il timer. Da domani €497, per sempre. Il momento più conveniente per entrare è adesso.</p>
-    <a class="cta" href="#checkout" style="margin-top:24px">Entra ora — €397 &nbsp;→</a>
+    <p class="lead">€497. Come promesso, il prezzo è salito e non torna indietro. Chi rimanda non risparmia più niente: ora conta solo quanto in fretta lo metti a lavorare.</p>
+    <a class="cta" href="#checkout" style="margin-top:24px">Entra ora — €497 &nbsp;→</a>
     <p class="cta-sub">Ti riporta al pagamento qui sopra · accesso a vita · garanzia 5 giorni</p>
   </div>
 </section>
@@ -300,7 +300,7 @@
     var diff = deadline - Date.now();
     if(diff<=0){
       elD.textContent=elH.textContent=elM.textContent=elS.textContent="00";
-      note.textContent="Il prezzo è salito. Entra ora prima del prossimo scatto.";
+      note.textContent="497. Come promesso. Questo è il prezzo, per sempre.";
       return;
     }
     var s=Math.floor(diff/1000);
