@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hook Writer — Software AI — Maddalena Coach</title>
+<style>
+  :root{--ground:#08080B;--surface:#15151C;--line:#2A2A36;--rose:#E11D57;--rose-lt:#F2568B;--ink:#F6F2F5;--muted:#9E96A2;--good:#39D98A}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+  .wrap{width:100%;max-width:600px;padding:32px 20px 60px}
+  .brand{text-align:center;margin-bottom:22px}
+  .brand .nome{font-family:Georgia,serif;font-style:italic;font-size:30px;color:var(--rose-lt)}
+  .brand .coach{font-size:12px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+  .badge{display:inline-block;background:rgba(225,29,87,.15);color:var(--rose-lt);border:1px solid rgba(225,29,87,.4);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:999px;font-weight:700}
+  h1{font-size:26px;font-weight:800;text-align:center;margin:14px 0 4px;letter-spacing:-.01em;line-height:1.15}
+  .occh{color:var(--muted);font-size:15px;text-align:center;margin-bottom:18px}
+  .price{text-align:center;margin:8px 0 4px}
+  .price .amt{font-size:46px;font-weight:800;letter-spacing:-.02em}
+  .price .old{color:var(--muted);text-decoration:line-through;font-size:18px;margin-left:8px}
+  .incl{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+  .incl .t{font-size:12px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:10px}
+  .incl ul{list-style:none}
+  .incl li{padding:6px 0 6px 26px;position:relative;font-size:14.5px;line-height:1.4}
+  .incl li:before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:800}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;min-height:540px}
+  .secure{display:flex;gap:8px;justify-content:center;align-items:center;color:var(--muted);font-size:12.5px;margin-top:16px;flex-wrap:wrap}
+  .secure .dot{color:var(--good)}
+  footer{margin-top:auto;padding:18px;color:#565060;font-size:11.5px;text-align:center}
+</style>
+<script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2162683834576421');fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'Hook Writer — Software AI',content_category:'SOFTWARE',value:197,currency:'EUR'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2162683834576421&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><div class="nome">Maddalena</div><div class="coach">Coach</div></div>
+    <div style="text-align:center"><span class="badge">SOFTWARE</span></div>
+    <h1>Hook Writer — Software AI</h1>
+    <p class="occh">Genera hook virali su misura</p>
+    <div class="price"><span class="amt">€197</span><span class="old">€169</span></div>
+    <div class="incl"><div class="t">Cosa ottieni</div><ul><li>Il software AI di Maddalena, non solo un corso</li><li>Hook illimitati sul tuo tema</li><li>Accesso a vita</li></ul></div>
+    <div class="card">
+      <div data-whop-checkout-plan-id="plan_Zf0xqNwT4W3ae" data-whop-checkout-theme="dark" style="min-height:520px"></div>
+    </div>
+    <div class="secure"><span class="dot">●</span> Pagamento sicuro · carta · Google/Apple Pay · PayPal · <b style="color:#F6F2F5">Klarna in 3 rate</b></div>
+  </div>
+  <footer>Maddalena Coach · maddalenacoach.com · accesso a vita</footer>
+<!-- Tracking CRM: stesso anon_id del sito, così le visite entrano nel CRM e attribuiscono -->
+<script>
+(function(){
+  try{
+    var k='mc_anon_id', id=localStorage.getItem(k);
+    if(!id){id='mo_'+Date.now().toString(36)+Math.random().toString(36).slice(2,10);localStorage.setItem(k,id);}
+    var lt=new URLSearchParams(location.search).get('lt');
+    if(lt){try{sessionStorage.setItem('mc_lt',lt);}catch(e){}}
+    fetch('https://maddalenacoach.com/api/public/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({anon_id:id,event:'pageview',path:location.pathname})}).catch(function(){});
+  }catch(e){}
+  // quando il checkout Whop è pronto, segnala InitiateCheckout a Meta
+  var fired=false;
+  var iv=setInterval(function(){
+    if(fired) return;
+    if(document.querySelector('#whop-checkout iframe, [data-whop-checkout-plan-id] iframe')){
+      fired=true; clearInterval(iv);
+      try{fbq('track','InitiateCheckout',{value:197,currency:'EUR',content_name:'Hook Writer — Software AI'});}catch(e){}
+    }
+  },1000);
+  setTimeout(function(){clearInterval(iv);},30000);
+})();
+</script>
+</body>
+</html>
