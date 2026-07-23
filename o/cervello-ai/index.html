@@ -25,7 +25,10 @@
   .incl li{padding:6px 0 6px 26px;position:relative;font-size:14.5px;line-height:1.4}
   .incl li:before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:800}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;min-height:540px}
-  .secure{display:flex;gap:8px;justify-content:center;align-items:center;color:var(--muted);font-size:12.5px;margin-top:16px;flex-wrap:wrap}
+  .secure{display:flex;gap:8px;justify-content:center;align-items:center;color:var(--muted);font-size:12.5px;margin-top:14px;flex-wrap:wrap}
+  .klarna{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:16px;background:#FFB3C7;color:#17120F;text-decoration:none;font-size:14.5px;padding:13px 18px;border-radius:12px}
+  .klarna b{font-weight:800}
+  .kbadge{background:#17120F;color:#FFB3C7;font-weight:800;border-radius:6px;padding:2px 7px;font-size:13px}
   .secure .dot{color:var(--good)}
   footer{margin-top:auto;padding:18px;color:#565060;font-size:11.5px;text-align:center}
 </style>
@@ -49,7 +52,10 @@ fbq('track','ViewContent',{content_name:'Cervello AI — Parti da Zero',content_
     <div class="card">
       <div data-whop-checkout-plan-id="plan_TedEh0TTJPDPx" data-whop-checkout-theme="dark" style="min-height:520px"></div>
     </div>
-    <div class="secure"><span class="dot">●</span> Pagamento sicuro · carta · Google/Apple Pay · PayPal · <b style="color:#F6F2F5">Klarna in 3 rate</b></div>
+    <a class="klarna" href="https://whop.com/checkout/plan_TedEh0TTJPDPx" target="_blank" rel="noopener">
+      <span class="kbadge">K.</span> Preferisci pagare in <b>3 rate con Klarna</b>? Clicca qui
+    </a>
+    <div class="secure"><span class="dot">●</span> Pagamento sicuro · carta · Google/Apple Pay · Apple Pay</div>
   </div>
   <footer>Maddalena Coach · maddalenacoach.com · accesso a vita</footer>
 <!-- Tracking CRM: stesso anon_id del sito, così le visite entrano nel CRM e attribuiscono -->
