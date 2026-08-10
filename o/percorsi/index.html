@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>I percorsi con Maddalena</title>
+<style>
+  :root{--ground:#08080B;--surface:#15151C;--line:#2A2A36;--rose:#E11D57;--rose-lt:#F2568B;--ink:#F6F2F5;--muted:#9E96A2;--good:#39D98A}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+  .wrap{width:100%;max-width:600px;padding:32px 20px 60px}
+  .brand{text-align:center;margin-bottom:22px}
+  .brand .nome{font-family:Georgia,serif;font-style:italic;font-size:30px;color:var(--rose-lt)}
+  .brand .coach{font-size:12px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+  .badge{display:inline-block;background:rgba(225,29,87,.15);color:var(--rose-lt);border:1px solid rgba(225,29,87,.4);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:999px;font-weight:700}
+  h1{font-size:28px;font-weight:800;text-align:center;margin:14px 0 4px;letter-spacing:-.01em;line-height:1.15}
+  .occh{color:var(--muted);font-size:15.5px;text-align:center;margin-bottom:18px;line-height:1.45}
+  .price{text-align:center;margin:10px 0 2px}
+  .price .amt{font-size:48px;font-weight:800;letter-spacing:-.02em}
+  .price .old{color:var(--muted);text-decoration:line-through;font-size:18px;margin-left:8px}
+  .rate{text-align:center;color:var(--rose-lt);font-size:14px;font-weight:700;margin-bottom:6px}
+  .perchi{background:rgba(225,29,87,.07);border-left:3px solid var(--rose);padding:12px 14px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14.5px;line-height:1.5;color:#E6DFE4}
+  .incl{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+  .incl .t{font-size:12px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:10px}
+  .incl ul{list-style:none}
+  .incl li{padding:7px 0 7px 26px;position:relative;font-size:14.8px;line-height:1.45}
+  .incl li:before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:800}
+  .acc{background:#0F0F15;border:1px dashed var(--line);border-radius:12px;padding:14px 18px;margin:14px 0}
+  .acc .t{font-size:11.5px;letter-spacing:1.4px;color:var(--rose-lt);text-transform:uppercase;margin-bottom:8px;font-weight:700}
+  .acc ul{list-style:none}
+  .acc li{padding:4px 0 4px 18px;position:relative;font-size:13.6px;color:#CFC7CE;line-height:1.4}
+  .acc li:before{content:"·";position:absolute;left:4px;color:var(--rose-lt);font-weight:800}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;min-height:540px}
+  .secure{display:flex;gap:8px;justify-content:center;align-items:center;color:var(--muted);font-size:12.5px;margin-top:14px;flex-wrap:wrap}
+  .secure .dot{color:var(--good)}
+  .klarna{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:16px;background:#FFB3C7;color:#17120F;text-decoration:none;font-size:16.5px;padding:18px 24px;border-radius:14px;box-shadow:0 4px 14px rgba(255,179,199,.25)}
+  .klarna b{font-weight:800}
+  .kbadge{font-weight:900;font-size:19px}
+  footer{margin-top:auto;padding:18px;color:#565060;font-size:11.5px;text-align:center}
+  .wrap{max-width:680px}
+  .g{display:grid;gap:16px;margin-top:22px}
+  .p{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;color:inherit;display:block;transition:border-color .15s}
+  .p:hover{border-color:var(--rose)}
+  .p.top{border-color:rgba(225,29,87,.55);box-shadow:0 0 0 1px rgba(225,29,87,.25)}
+  .p .n{font-size:21px;font-weight:800;margin:8px 0 4px}
+  .p .o{color:var(--muted);font-size:14.5px;line-height:1.45;margin-bottom:12px}
+  .p .pr{font-size:30px;font-weight:800}
+  .p .pr .old{font-size:15px;color:var(--muted);text-decoration:line-through;margin-left:6px}
+  .p .rt{color:var(--rose-lt);font-size:13.5px;font-weight:700;margin-top:2px}
+  .p .cta{margin-top:14px;background:var(--rose);color:#fff;text-align:center;padding:13px;border-radius:10px;font-weight:800;font-size:15px}
+  .p ul{list-style:none;margin:12px 0 0}
+  .p li{padding:5px 0 5px 22px;position:relative;font-size:14px;line-height:1.4;color:#DAD3D9}
+  .p li:before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:800}
+  .intro{text-align:center;color:var(--muted);font-size:15.5px;line-height:1.55;margin-top:6px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><div class="nome">Maddalena</div><div class="coach">Coach</div></div>
+    <h1>Scegli come vuoi essere seguita</h1>
+    <p class="intro">In tutti e tre trovi <b>l'academy completa</b> — ogni corso, per sempre.<br>Cambia quanto tempo passi con la tua coach.</p>
+    <div class="g">
+      <a class="p" href="https://maddalenaofferta.com/o/acceleratore/">
+        <span class="badge">ACCELERATORE</span>
+        <div class="n">Acceleratore</div>
+        <div class="o">Tutta l'academy, più una coach che ti imposta il lavoro</div>
+        <div class="pr">€497<span class="old">€1290</span></div>
+        <div class="rt">Con Klarna: 3 rate da 166€</div>
+        <ul><li><b>Tutta l'academy Maddalena</b>: ogni corso, per sempre</li><li><b>1 call 1:1</b> da 45 minuti con una coach del team</li><li>Revisione scritta del tuo profilo prima della call</li><li><b>2 mesi</b> nel gruppo con le altre ragazze</li></ul>
+        <div class="cta">Scopri e attiva →</div>
+      </a>
+      <a class="p top" href="https://maddalenaofferta.com/o/percorso/">
+        <span class="badge">IL PIÙ SCELTO</span>
+        <div class="n">Percorso</div>
+        <div class="o">Tre mesi seguita passo passo, non da sola</div>
+        <div class="pr">€997<span class="old">€2490</span></div>
+        <div class="rt">Con Klarna: 3 rate da 332€</div>
+        <ul><li><b>Tutta l'academy Maddalena</b>: ogni corso, per sempre</li><li><b>3 call 1:1</b> con la tua coach: impostazione, correzione a 30 giorni, chiusura</li><li>Revisione dei tuoi contenuti tra una call e l'altra</li><li><b>3 mesi</b> nel gruppo, con le sessioni dal vivo</li></ul>
+        <div class="cta">Scopri e attiva →</div>
+      </a>
+      <a class="p" href="https://maddalenaofferta.com/o/percorso-completo/">
+        <span class="badge">1:1 COMPLETO</span>
+        <div class="n">Percorso 1:1 Completo</div>
+        <div class="o">La tua coach accanto per tre mesi, dall'inizio alla prima vendita</div>
+        <div class="pr">€1997<span class="old">€4900</span></div>
+        <div class="rt">Con Klarna: 3 rate da 665€</div>
+        <ul><li><b>Tutta l'academy Maddalena</b>: ogni corso, per sempre</li><li><b>5 call 1:1</b> distribuite su tre mesi</li><li><b>Contatto diretto con la tua coach</b> tra una call e l'altra</li><li>Piano su misura scritto dopo la prima call</li></ul>
+        <div class="cta">Scopri e attiva →</div>
+      </a>
+    </div>
+    <div class="secure" style="margin-top:22px"><span class="dot">●</span> Pagamento sicuro · carta · Klarna a rate · Google/Apple Pay</div>
+  </div>
+  <footer>Maddalena Coach · maddalenacoach.com</footer>
+</body>
+</html>
